@@ -28,14 +28,22 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+h1 { position: absolute;
+    opacity: 100%;
+    font-size: 60px;
+    margin-top: 200px;
+    margin-left: 100px;
     color: var(--clr-accent)
 }
 .main {position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 100px;
-    width: 70%;
+    width: 60%;
     float: center;
+}
+
+img {margin: 0;
+    width: 100%;
 }
 
 nav {
@@ -99,4 +107,8 @@ nav .link_container {
     width: max-content;
     font-size: var(--fs-link);
 }
-
+.btn {margin-top: 20px;
+alignment: left;
+    color: #f17e64;
+    background-color: #e8e8f0;
+}
