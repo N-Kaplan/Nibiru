@@ -52,13 +52,6 @@ nav {
     z-index: 2;
 }
 
-h2 {
-    color: var(--clr-text);
-    font-size: calc(var(--fs-title) * 0.8);
-    margin-bottom: 3rem;
-    letter-spacing: 2px;
-}
-
 a,
 a:focus,
 a:visited {
@@ -80,14 +73,17 @@ nav .link_container {
     gap: 2rem;
 }
 
-.linkNav {
+.linkNav,
+.informationContainer a {
     width: max-content;
     color: var(--clr-text);
     font-size: var(--fs-link);
 }
 
 .linkNav:after,
-.linkNav:visited::after {
+.linkNav:visited::after,
+.informationContainer a:after,
+.informationContainer a:visited::after {
     content: '';
     position: absolute;
     background: var(--clr-accent);
@@ -99,12 +95,20 @@ nav .link_container {
     transition: all .2s ease;
 }
 
-.linkNav:hover:after {
+.linkNav:hover:after,
+.informationContainer a:hover:after {
     transform: scaleX(0);
 }
 
-header,
-.contact {
+
+h2 {
+    color: var(--clr-text);
+    font-size: calc(var(--fs-title) * 0.8);
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+}
+
+header {
     background-image: url(assets/bg.png);
     background-size: 35%;
     background-attachment: fixed;
@@ -150,11 +154,13 @@ header,
 
 .description,
 .contact {
-    padding: 10rem;
     color: var(--clr-text);
 }
 
 .description {
+    height: auto;
+    min-height: 100%;
+    padding: 10%;
     background: var(--clr-accent);
 }
 
@@ -163,16 +169,49 @@ header,
     font-size: var(--fs-text);
 }
 
-.contactLinks {
-    position: relative;
-    display: grid;
-    width: 30%;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 0.5fr);
-    gap: 4rem;
-    font-size: calc(var(--fs-link)*1.5);
+.contact {
+    width: 100%;
+    height: 100%;
 }
 
-.contactLinks a {
+.contact h2 {
+    padding: 12.5% 0 0 10%;
+}
+
+.informationContainer {
+    position: relative;
+    display: grid;
+    margin-top: 2%;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    font-size: calc(var(--fs-link)*1.2);
+}
+
+.informationContainer h4,
+.informationContainer p,
+.informationContainer a,
+.informationContainer i {
     font-family: var(--ff-secondary);
 }
+
+.informationContainer p {
+    margin: 1rem 0;
+    line-height: 1.75rem;
+    font-size: calc(var(--fs-link)*0.9);
+}
+
+.services {
+    width: 80%;
+}
+
+/* .informationContainer a {
+    width: max-content;
+    font-style: normal;
+    font-family: var(--ff-secondary);
+    mix-blend-mode: difference;
+} */
