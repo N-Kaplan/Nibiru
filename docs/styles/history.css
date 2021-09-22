@@ -33,7 +33,7 @@ body {
     color: var(--clr-text);
     font-family: var(--ff-secondary);
     overflow-x: hidden;
-    background-image: url("../../assets/images/jupiter.jpg");
+    background-image: url("../../docs/assets/images/jupiter.jpg");
     background-attachment: fixed;
 }
 
