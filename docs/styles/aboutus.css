@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --clr-bg: #22252a;
+    --clr-text: #f7f7f7;
+    --clr-accent: #f17e64;
+
+    --ff-primary: 'Staatliches';
+    --ff-secondary: 'Montserrat';
+
+    --fs-title: 5rem;
+    --fs-text: 2rem;
+    --fs-link: 1.3rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: var(--clr-bg) !important; 
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    display: grid;
+    width: 100%;
+    margin: 2rem;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+
+    z-index: 2;
+}
+
+a,
+a:focus,
+a:visited {
+    position: relative;
+    text-decoration: none;
+    color: var(--clr-text);
+    outline: none;
+    text-decoration: none;
+}
+
+nav .link_container {
+    position: relative;
+    display: grid;
+    margin-right: 3rem;
+    align-items: center;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr;
+    grid-column: 2 / 3;
+    gap: 2rem;
+}
+
+.linkNav {
+    width: max-content;
+    color: var(--clr-text);
+    font-size: var(--fs-link);
+}
+
+.linkNav:after,
+.linkNav:visited::after {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    inset: 1.5rem 0 0 0;
+    transform: scaleX(1);
+    transition: all .2s ease;
+}
+
+.linkNav:hover {
+
+    color: var(--clr-text) ;
+}
+
+.linkNav:hover:after {
+    transform: scaleX(0);
+}
+
+.name_company {
+    position: relative;
+    letter-spacing: 5px;
+    color: var(--clr-text);
+    font-size: var(--fs-text);
+}
+
+.name_company::before {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: calc(100% - 5px);
+    height: 5px;
+    margin: 0;
+    inset: -3px 0 0 0;
+    z-index: -1;
+}
+
+.name_company::after {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: calc(100% - 5px);
+    height: 5px;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.LakiSpinner{
+    
+   /* margin-top: 200px;
+     margin-left: 800px; 
+    
+    position: absolute; */
+    
+
+
+
+}   
+
+.Laki {
+    /* border-radius: 50%;
+     margin-top: 200px;
+     margin-left: 800px; 
+     position: absolute; */
+     
+     /*clip-path: circle();*/
+     
+     position: absolute;
+     /*perspective: 10px; */
+     box-shadow: 0 0 -250px rgb(236, 229, 229);
+ 
+     
+     
+     
+}
+
+.Laki:hover{
+
+    box-shadow: 0 0 25px rgb(243, 240, 240);
+   /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%); */
+   
+
+
+
+}
+
+
+
+
+
+.my-cols{
+
+    display: flex;
+   /* justify-content: center;
+    align-items: center;*/
+
+
+}
+
+
+/*.fa-spin{
+
+    animation: fa-spin linear 1000s 2;
+} */
+
+
+
+.DarylSpinner{
+    
+    margin-top: 500px;
+    margin-left: 800px;
+    position: absolute;
+}
+
