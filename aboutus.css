@@ -126,11 +126,17 @@ nav .link_container {
 .my-cols{
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+   /* justify-content: center;
+    align-items: center;*/
 
 
 }
+
+
+/*.fa-spin{
+
+    animation: fa-spin linear 1000s 2;
+} */
 
 .DarylSpinner{
     
@@ -138,3 +144,4 @@ nav .link_container {
     margin-left: 800px;
     position: absolute;
 }
+
