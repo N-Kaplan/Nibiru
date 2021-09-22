@@ -96,7 +96,8 @@ h1 { position: absolute;
     color: var(--clr-accent);
     z-index: 3;
 }
- .anchor { color: var(--clr-accent);
+ h1 .anchor { color: var(--clr-accent)
+ font-size: 60px;
 }
 
 
