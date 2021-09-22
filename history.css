@@ -3,13 +3,14 @@
 
 :root {
     --clr-bg: #22252a;
-    --clr-text: #e8e8f0;
+    --clr-text: #f7f7f7;
     --clr-accent: #f17e64;
 
     --ff-primary: 'Staatliches';
     --ff-secondary: 'Montserrat';
 
     --fs-title: 5rem;
+    --fs-text: 2rem;
     --fs-link: 1.3rem;
 }
 
@@ -17,7 +18,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: var(--clr-text);
     font-family: var(--ff-primary);
     box-sizing: border-box;
 }
@@ -30,8 +30,11 @@ body {
 
 body {
     background: var(--clr-bg);
+    color: var(--clr-text);
+    font-family: var(--ff-secondary);
     overflow-x: hidden;
     background-image: url("images/jupiter.jpg");
+    background-attachment: fixed;
 }
 
 nav {
@@ -45,32 +48,18 @@ nav {
     z-index: 2;
 }
 
+img {
+    width: 100%;
+}
+
 a,
 a:focus,
 a:visited {
     position: relative;
-    outline: none;
-    color: var(--clr-text);
     text-decoration: none;
-
-    transition: color 200ms ease;
-}
-
-a:after,
-a:visited::after {
-    content: '';
-    position: absolute;
-    background: var(--clr-accent);
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    inset: 1.5rem 0 0 0;
-    transform: scaleX(1);
-    transition: all .2s ease;
-}
-
-a:hover:after {
-    transform: scaleX(0);
+    color: var(--clr-text);
+    outline: none;
+    text-decoration: none;
 }
 
 nav .link_container {
@@ -86,5 +75,35 @@ nav .link_container {
 
 .linkNav {
     width: max-content;
+    color: var(--clr-text);
     font-size: var(--fs-link);
+}
+
+.linkNav:after,
+.linkNav:visited::after {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    inset: 1.5rem 0 0 0;
+    transform: scaleX(1);
+    transition: all .2s ease;
+}
+
+.linkNav:hover:after {
+    transform: scaleX(0);
+}
+
+main {
+    padding: 4rem;
+}
+
+p {
+    font-family: var(--ff-secondary);
+}
+
+h2 {
+    color: var(--clr-accent);
 }
