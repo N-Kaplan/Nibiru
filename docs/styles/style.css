@@ -109,7 +109,7 @@ h2 {
 }
 
 header {
-    background-image: url(assets/bg.png);
+    background-image: url(../../assets/images/bg.png);
     background-size: 35%;
     background-attachment: fixed;
     background-position: center;
