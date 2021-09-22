@@ -41,7 +41,6 @@ nav {
     margin: 2rem;
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr;
-
     z-index: 2;
 }
 
