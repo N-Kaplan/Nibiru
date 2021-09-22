@@ -154,7 +154,10 @@ alignment: left;
     color: #f17e64;
     background-color: #e8e8f0;
 }
-
+em {
+    font-size: larger;
+color: #f17e64;
+}
 li {
     font-family: var(--ff-secondary)
 }
