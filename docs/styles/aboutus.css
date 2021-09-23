@@ -31,6 +31,7 @@ body {
 body {
     background: var(--clr-bg) !important; 
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 nav {
@@ -122,7 +123,23 @@ nav .link_container {
     bottom: 0;
     z-index: -1;
 }
-.LakiSpinner{
+
+#header{
+
+    align-items: center;
+    color:white;
+    z-index: 10;
+    font-size: larger;
+}
+
+.my-container {
+            
+    float:bottom;
+    border: 1px  gray;
+    text-align:center; 
+ }
+
+.lakiSpinner{
     
    /* margin-top: 200px;
      margin-left: 800px; 
@@ -134,7 +151,9 @@ nav .link_container {
 
 }   
 
-.Laki {
+
+
+.laki {
     /* border-radius: 50%;
      margin-top: 200px;
      margin-left: 800px; 
@@ -144,14 +163,14 @@ nav .link_container {
      
      position: absolute;
      /*perspective: 10px; */
-     box-shadow: 0 0 -250px rgb(236, 229, 229);
+     
  
      
      
      
 }
 
-.Laki:hover{
+.laki:hover{
 
     box-shadow: 0 0 25px rgb(243, 240, 240);
    /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%); */
@@ -182,10 +201,52 @@ nav .link_container {
 
 
 
-.DarylSpinner{
+/* .darylSpinner{ 
     
     margin-top: 500px;
     margin-left: 800px;
-    position: absolute;
+    /* position: absolute; */
+
+
+.wrapper {
+    display: none;
 }
 
+.wrapperkpl{
+    display: none;
+}
+
+.imageld:hover .wrapper {
+    display:block !important;
+}
+
+
+
+.imagekpl:hover .wrapper {
+
+    display:block !important;
+
+}
+
+p{
+
+    color: white;
+}
+
+.header{
+    position: absolute;
+    top: 50%;
+    border: 1px solid Red;
+    
+    margin: auto;
+    color: white;
+   
+
+    display: flex;
+    flex-direction: row-reverse;
+    transform: rotate(-90deg);
+    width:max-content
+    
+    
+    
+}
