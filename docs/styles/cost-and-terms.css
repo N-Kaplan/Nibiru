@@ -124,14 +124,15 @@ a.nasareq {color: #f17e64}
 
 a.anchor {
     color: #f17e64;
-position: absolute;
-font-size: 60px;
+    position: absolute;
+    font-size: 60px;
     margin-left: 50px;
     margin-top: 150px;
     opacity: 100%;
 }
 
-.headings {position: relative;
+.headings {
+    position: relative;
     background: url("../assets/images/spaceman.jpg");
     opacity: 90%;
     background-repeat: no-repeat;
@@ -144,7 +145,7 @@ font-size: 60px;
  h1.anchor {
 
      color: var(--clr-accent);
- font-size: 60px;
+     font-size: 60px;
      margin-top: 100px;
      margin-left: 50px;
 
@@ -159,26 +160,31 @@ font-size: 60px;
  }
 
 
-main {width: 100%;}
-
-section
-{position: relative;
-   height: auto;
+main {
+    width: 100%;
 }
+
+section {
+    position: relative;
+    height: auto;
+}
+
 section.terms {
     width: 60%;
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 4%;
+    padding-left: 30px;
 }
+
 @media screen and (max-width: 600px) {
     section.terms { width: 100%;
-        margin-left: 10px;
+        margin-left: 4%;
         margin-top: 50px;
         margin-bottom: 50px;
         padding-top: 4%;
-    padding-right: 4%;}
+        padding-right: 10%;}
 }
 
 @media screen and (max-width: 600px) {
@@ -189,7 +195,6 @@ section.terms {
         margin-bottom: 50px;
         margin-bottom: 50px;
         padding-bottom: 100px;
-        padding-right: 4%;
         padding-top: 4%;
     }
 
@@ -198,27 +203,35 @@ section.terms {
 section.cost {
     width: 60%;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
     margin-bottom: 50px;
     padding-bottom: 100px;
+    padding-left: 30px;
 }
 
-h2 {margin-top: 50px;
+h2 {
+    margin-top: 50px;
     margin-bottom: 30px;
-    color: white}
+    margin-left: 0px;
+    color: white;
+}
 
-.btn {margin-top: 20px;
-alignment: left;
+.btn {
+    margin-top: 20px;
+    alignment: left;
     color: #f17e64;
     background-color: #e8e8f0;
 }
 em {
     font-size: larger;
-color: #f17e64;
+    color: #f17e64;
 }
+
 li {
     font-family: var(--ff-secondary)
 }
 
-col {border: none;}
+col {
+    border: none;
+}
