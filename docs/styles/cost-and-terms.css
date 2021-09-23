@@ -94,6 +94,7 @@ nav .link_container {
     letter-spacing: 5px;
     color: var(--clr-text);
     font-size: var(--fs-text);
+    transition: all 250ms ease;
 }
 
 .name_company::before {
@@ -140,6 +141,8 @@ a.anchor {
     background-position: center;
     margin-top: 0;
     height: 100vh;
+    margin-right: 0;
+
 }
 
  h1.anchor {
@@ -178,27 +181,6 @@ section.terms {
     padding-left: 30px;
 }
 
-@media screen and (max-width: 600px) {
-    section.terms { width: 100%;
-        margin-left: 4%;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding-top: 4%;
-        padding-right: 10%;}
-}
-
-@media screen and (max-width: 600px) {
-    section.cost {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-bottom: 50px;
-        padding-bottom: 100px;
-        padding-top: 4%;
-    }
-
-}
 
 section.cost {
     width: 60%;
@@ -234,4 +216,54 @@ li {
 
 col {
     border: none;
+}
+@media (max-width: 700px) {
+    nav {
+        grid-template-columns: 1fr;
+    }
+
+    nav .link_container {
+        grid-column: 1 / 3;
+    }
+
+    nav .home_link {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    nav .linkNav {
+        font-size: calc(var(--fs-link)*0.8);
+    }
+
+    nav .link_container {
+        grid-column: 1 / 3;
+        gap: .5rem;
+    }
+
+    nav .linkNav:after,
+    nav .linkNav:visited::after {
+        inset: 1.3rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section.terms { width: 100%;
+        margin-left: 4%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 4%;
+        padding-right: 10%;}
+}}
+
+@media screen and (max-width: 600px) {
+    section.cost {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 100px;
+        padding-top: 4%;
+    }
 }
