@@ -20,11 +20,11 @@
 
 ## Creators
 
-* Daryl
-* Lakneswaran Krishnan
-* Katya Heylen
-* Pascal
-* N. Kaplan
+* <a href="https://github.com/Leweyse">Daryl Castro</a>
+* <a href="https://github.com/Lakneswaran">Lakneswaran Krishnan</a>
+* <a href="https://github.com/KatyaHeylen">Katya Heylen</a>
+* <a href="https://github.com/PascalBM">Pascal</a>
+* <a href="https://github.com/N-Kaplan">N. Kaplan</a>
 
 
 
