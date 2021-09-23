@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --clr-bg: #22252a;
+    --clr-text: #f7f7f7;
+    --clr-accent: #f17e64;
+
+    --ff-primary: 'Staatliches';
+    --ff-secondary: 'Montserrat';
+
+    --fs-title: 5rem;
+    --fs-text: 2rem;
+    --fs-link: 1.3rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-primary);
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: var(--clr-bg);
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    display: grid;
+    width: 100%;
+    margin: 2rem;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+
+    z-index: 2;
+}
+
+a,
+a:focus,
+a:visited {
+    position: relative;
+    text-decoration: none;
+    color: var(--clr-text);
+    outline: none;
+    text-decoration: none;
+}
+a.nasareq {color: #f17e64}
+
+a.anchor {
+    color: #f17e64;
+position: absolute;
+font-size: 60px;
+    margin-left: 50px;
+    margin-top: 150px;
+    opacity: 100%;
+}
+
+nav .link_container {
+    position: relative;
+    display: grid;
+    margin-right: 3rem;
+    align-items: center;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr;
+    grid-column: 2 / 3;
+    gap: 2rem;
+}
+
+.linkNav {
+    width: max-content;
+    color: var(--clr-text);
+    font-size: var(--fs-link);
+}
+
+.linkNav:after,
+.linkNav:visited::after {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    inset: 1.5rem 0 0 0;
+    transform: scaleX(1);
+    transition: all .2s ease;
+}
+
+.linkNav:hover:after {
+    transform: scaleX(0);
+}
+.headings {position: relative;
+background: url("../assets/images/spaceman.jpg");
+    opacity: 70%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 0;
+    height: 100vh;
+}
+
+ h1.anchor {
+
+     color: var(--clr-accent);
+ font-size: 60px;
+     margin-top: 100px;
+     margin-left: 50px;
+
+ }
+
+ h1.howmuch {
+     color: var(--clr-accent);
+     font-size: 50px;
+     margin-top: 250px;
+     margin-left: 100px;
+ }
+
+
+main {width: 100%;}
+
+section
+{position: relative;
+   height: auto;
+}
+section.terms {
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section.cost {
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+h2 {margin-top: 50px;
+    margin-bottom: 30px;
+    color: white}
+
+.btn {margin-top: 20px;
+alignment: left;
+    color: #f17e64;
+    background-color: #e8e8f0;
+}
+em {
+    font-size: larger;
+color: #f17e64;
+}
+li {
+    font-family: var(--ff-secondary)
+}
+
+col {border: none;}

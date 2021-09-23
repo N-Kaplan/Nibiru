@@ -3,7 +3,9 @@
 
 :root {
     --clr-bg: #22252a;
+  
     --clr-text: #f7f7f7;
+
     --clr-accent: #f17e64;
 
     --ff-primary: 'Staatliches';
@@ -11,15 +13,13 @@
 
     --fs-title: 5rem;
     --fs-text: 2rem;
-    --fs-link: 1.3rem;
 }
 
 
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--ff-primary);
-    box-sizing: border-box;
+    color: var(--clr-text);
 }
 
 html,
@@ -44,7 +44,6 @@ nav {
     margin: 2rem;
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr;
-
     z-index: 2;
 }
 
@@ -85,6 +84,7 @@ nav .link_container {
 
 .linkNav:after,
 .linkNav:visited::after {
+
     content: '';
     position: absolute;
     background: var(--clr-accent);
@@ -145,3 +145,4 @@ h2 {
 .carousel-inner {
     padding-top: 150px;
 }
+
