@@ -34,48 +34,54 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="vw-100 vh-100 position-relative start-50 top-50 translate-middle-x">
-                        <div class="card-body position-absolute start-50 top-0 translate-middle-x mb-5 pb-5">
+                        <div class="card-body position-absolute start-50 top-0 translate-middle-x rounded">
                             <h2 class="card-title mb-2">Reaching for the stars</h2>
-                            <figure class="col-lg-6">
-                                <img src="assets/images/first-satellite02.jpg" alt="First satellite in space.">
+                            <figure class="col-lg-6 col-sm-12 p1">
+                                <img class="rounded" src="assets/images/first-satellite02.jpg" alt="First satellite in space.">
                             </figure>
-                            <p class="card-text lead p-0">Yearning for the stars etc.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p class="card-text lead p-0">Humans have ever looked up at the sky in wonder and yearning.
+                                The first artificial satellite was launched in 1957, and ever since we have been pushing the boundaries to reach the sky and beyond.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div class="vw-100 vh-100">
-                        <div class="card-body position-absolute start-50 top-0 translate-middle-x mb-5 pb-5">
+                        <div class="card-body position-absolute start-50 top-0 translate-middle-x rounded">
                             <h2 class="card-title mb-2">First people in space</h2>
-                            <figure class="col-lg-6">
-                                <img src="assets/images/astronaut-EH-White02.jpg" alt="ASTRONAUT-EDWARD-H.-WHITE-FLOATING-IN-ZERO-GRAVITY-WITH-EARTH-BEHIND-HIM-JUNE-1965.">
+                            <figure class="col-lg-6 col-sm-12 p-1 ">
+                                <img class="rounded" src="assets/images/astronaut-EH-White02.jpg" alt="ASTRONAUT-EDWARD-H.-WHITE-FLOATING-IN-ZERO-GRAVITY-WITH-EARTH-BEHIND-HIM-JUNE-1965.">
                             </figure>
-                            <p class="card-text lead p-0">Gagarin, Armstrong etc.</p>
+                            <p>On April 12 1961, Russian cosmonaut Yuri Gagarin was the first human in space, completing a single orbit around the Earth during his 108-minute flight.
+                                Humanity kept reaching for the stars, and on July 20, 1969, Neil Armstrong and Buzz Aldrin became the first humans to reach the moon.</p>
+                            <p class="card-text lead p-0">Different nations have kept exploring the solar system and beyond with unmanned missions, but manned missions remained limited to Earth Orbit for decades.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div class="vw-100 vh-100">
-                        <div class="card-body position-absolute start-50 top-0 translate-middle-x mb-5 pb-5">
+                        <div class="card-body position-absolute start-50 top-0 translate-middle-x rounded">
                             <h2 class="card-title mb-2">Space Tourism</h2>
-                            <figure class="col-lg-6">
-                                <img src="assets/images/SpaceX-rocket-breaks-historical-record02.jpg" alt="SpaceX SuperJumbo at launch.">
+                            <figure class="col-lg-6 col-sm-12 p-1 rounded">
+                                <img class="rounded" src="assets/images/SpaceX-rocket-breaks-historical-record02.jpg" alt="SpaceX SuperJumbo at launch.">
                             </figure>
-                            <p class="card-text lead p-0">SpaceX etc.</p>
+                            <p class="card-text lead p-0">The first steps into recreational space tourism were on various government-owned vehicles such as the Russian Soyuz and the International Space Station in 2001.
+                            </p>
+                            <p class="card-text lead p-0">Various companies have started to offer entirely commercial space flights, up to 2021 still limited to Earth Orbit.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <div class="vw-100 vh-100">
-                        <div class="card-body position-absolute start-50 top-0 translate-middle-x mb-5 pb-5">
+                        <div class="card-body position-absolute start-50 top-0 translate-middle-x rounded">
                             <h2 class="card-title mb-2">Nibiru: The Next Chapter</h2>
-                            <figure class="col-lg-6">
-                                <img src="assets/images/solar-system02.jpg" alt="Solar system: partially visible sun and the planets.">
+                            <figure class="col-lg-6 col-sm-12 p-1 rounded">
+                                <img class="rounded" src="assets/images/solar-system02.jpg" alt="Solar system: partially visible sun and the planets.">
                             </figure>
-                            <p class="card-text lead p-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <p class="card-text lead p-0">Niburu, established in 2021, envisions a future where touring our Solar System is available to the general populations.</p>
+                            <p class="card-text lead p-0">Our mission is enabling anyone to experience the wonders of spaceflight and the amazing sights of our Solar System in person.</p>
                         </div>
                     </div>
                 </div>
@@ -93,6 +99,22 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script>
+        let name = document.querySelector('.name_company');
 
+        const navAnim = () => {
+            let move = window.scrollY;
+
+            if (move > 10) {
+                name.style.opacity = '0';
+                name.style.pointerEvents = 'none';
+            } else {
+                name.style.opacity = '1';
+                name.style.pointerEvents = 'all';
+            }
+        }
+
+        window.addEventListener('scroll', navAnim)
+    </script>
 </body>
 </html>
