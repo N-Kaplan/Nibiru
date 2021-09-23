@@ -3,14 +3,16 @@
 
 :root {
     --clr-bg: #22252a;
-    --clr-text: #e8e8f0;
+  
+    --clr-text: #f7f7f7;
+
     --clr-accent: #f17e64;
 
     --ff-primary: 'Staatliches';
     --ff-secondary: 'Montserrat';
 
     --fs-title: 5rem;
-    --fs-link: 1.3rem;
+    --fs-text: 2rem;
 }
 
 
@@ -18,8 +20,6 @@
     margin: 0;
     padding: 0;
     color: var(--clr-text);
-    font-family: var(--ff-primary);
-    box-sizing: border-box;
 }
 
 html,
@@ -30,8 +30,11 @@ body {
 
 body {
     background: var(--clr-bg);
+    color: var(--clr-text);
+    font-family: var(--ff-secondary);
     overflow-x: hidden;
-    background-image: url("images/jupiter.jpg");
+    background-image: url("../../docs/assets/images/jupiter.jpg");
+    background-attachment: fixed;
 }
 
 nav {
@@ -44,32 +47,22 @@ nav {
     z-index: 2;
 }
 
+img {
+    width: 100%;
+}
+
+figure {
+    float:right;
+    display: inline-block;
+}
+
 a,
 a:focus,
 a:visited {
     position: relative;
-    outline: none;
-    color: var(--clr-text);
     text-decoration: none;
-
-    transition: color 200ms ease;
-}
-
-a:after,
-a:visited::after {
-    content: '';
-    position: absolute;
-    background: var(--clr-accent);
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    inset: 1.5rem 0 0 0;
-    transform: scaleX(1);
-    transition: all .2s ease;
-}
-
-a:hover:after {
-    transform: scaleX(0);
+    color: var(--clr-text);
+    outline: none;
 }
 
 nav .link_container {
@@ -85,5 +78,78 @@ nav .link_container {
 
 .linkNav {
     width: max-content;
+    color: var(--clr-text);
     font-size: var(--fs-link);
 }
+
+.linkNav:after,
+.linkNav:visited::after {
+
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    inset: 1.5rem 0 0 0;
+    transform: scaleX(1);
+    transition: all .2s ease;
+}
+
+.linkNav:hover:after {
+    transform: scaleX(0);
+}
+
+main {
+    padding: 4rem;
+}
+
+p {
+    font-family: var(--ff-secondary);
+}
+
+h2 {
+    color: var(--clr-accent);
+    text-align: center;
+}
+
+.name_company {
+    position: relative;
+    letter-spacing: 5px;
+    color: var(--clr-text);
+    font-size: var(--fs-text);
+}
+
+.name_company::before {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: calc(100% - 5px);
+    height: 5px;
+    margin: 0;
+    inset: -3px 0 0 0;
+    z-index: -1;
+}
+
+.name_company::after {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: calc(100% - 5px);
+    height: 5px;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.carousel-inner {
+    padding-top: 150px;
+}
+
+<<<<<<< HEAD
+.card-body {
+    background-color: rgba(34, 37, 42, 0.5);
+}
+=======
+>>>>>>> a0bdbc282f4072e89cf05e19ef98006b9eafd782
