@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
     --clr-bg: #22252a;
-    --clr-text: #ffffff;
+    --clr-text: #f7f7f7;
+    --clr-accent: #f17e64;
 
     --ff-primary: 'Staatliches';
     --ff-secondary: 'Montserrat';
 
     --fs-title: 5rem;
+    --fs-text: 2rem;
     --fs-link: 1.3rem;
 }
 
@@ -16,7 +20,6 @@
     padding: 0;
     color: var(--clr-text);
     font-family: var(--ff-primary);
-    box-sizing: border-box;
 }
 
 html,
@@ -27,7 +30,10 @@ body {
 
 body {
     background: var(--clr-bg);
+    color: var(--clr-text);
     overflow-x: hidden;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav {
@@ -37,35 +43,17 @@ nav {
     margin: 2rem;
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr;
-
     z-index: 2;
 }
 
 a,
 a:focus,
-a:visited {
+a:visited,
+a:hover {
     position: relative;
-    outline: none;
     text-decoration: none;
-
-    transition: color 200ms ease;
-}
-
-a:after,
-a:visited::after {
-    content: '';
-    position: absolute;
-    background: var(--clr-accent);
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    inset: 1.5rem 0 0 0;
-    transform: scaleX(1);
-    transition: all .2s ease;
-}
-
-a:hover:after {
-    transform: scaleX(0);
+    color: var(--clr-text);
+    outline: none;
 }
 
 nav .link_container {
@@ -81,5 +69,86 @@ nav .link_container {
 
 .linkNav {
     width: max-content;
+    color: var(--clr-text);
     font-size: var(--fs-link);
+}
+
+.linkNav:after,
+.linkNav:visited::after {
+
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    inset: 1.5rem 0 0 0;
+    transform: scaleX(1);
+    transition: all .2s ease;
+}
+
+.linkNav:hover:after {
+    transform: scaleX(0);
+}
+
+p {
+    font-family: var(--ff-secondary);
+}
+
+h2 {
+    color: var(--clr-accent);
+    text-align: center;
+    font-family: var(--ff-primary);
+}
+
+.name_company {
+    position: relative;
+    letter-spacing: 5px;
+    color: var(--clr-text);
+    font-size: var(--fs-text);
+    transition: all 250ms ease;
+}
+
+.name_company::before {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: calc(100% - 5px);
+    height: 5px;
+    margin: 0;
+    inset: -3px 0 0 0;
+    z-index: -1;
+}
+
+.name_company::after {
+    content: '';
+    position: absolute;
+    background: var(--clr-accent);
+    width: calc(100% - 5px);
+    height: 5px;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+section {
+    padding: 2rem;
+}
+
+img {
+    max-width: 500px;
+}
+
+article {
+    display: flex;
+    padding: 2rem;
+}
+
+article:nth-child(2n-1) {
+    flex-direction: row;
+}
+
+article:nth-child(2n) {
+    flex-direction: row-reverse;
 }
