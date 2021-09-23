@@ -110,6 +110,7 @@ p {
 
 h2 {
     color: var(--clr-accent);
+    text-align: center;
 }
 
 .name_company {
@@ -144,4 +145,8 @@ h2 {
 
 .carousel-inner {
     padding-top: 150px;
+}
+
+.card-body {
+    background-color: rgba(34, 37, 42, 0.5);
 }
