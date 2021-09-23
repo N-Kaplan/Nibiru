@@ -42,4 +42,5 @@ The project proposes a fictional company's website with functional elements such
 At [Nibiru][ghPages], we believe the stars should be within reach.
 
 <img src="https://cdn.glitch.com/85de6182-354b-4c86-bf82-84655187b399%2Fhome.png?v=1632407040481" alt="Homepage screenshot">
+
 [ghPages]: https://n-kaplan.github.io/Nibiru/
