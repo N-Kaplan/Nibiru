@@ -38,9 +38,9 @@ body {
 
     background: var(--clr-bg) !important; 
     overflow-x: hidden;
-    overflow-y: hidden;
 
-}
+    }
+
 
 nav {
     position: fixed;
@@ -49,8 +49,6 @@ nav {
     margin: 2rem;
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr;
-
-
     z-index: 2;
 }
 
@@ -154,74 +152,18 @@ nav .link_container {
     text-align:center; 
  }
 
-.lakiSpinner{
-    
-   /* margin-top: 200px;
-     margin-left: 800px; 
-    
-    position: absolute; */
-    
 
-
-
-}   
-
-
-
-.laki {
-    /* border-radius: 50%;
-     margin-top: 200px;
-     margin-left: 800px; 
-     position: absolute; */
-     
-     /*clip-path: circle();*/
-     
-     position: absolute;
-     /*perspective: 10px; */
-     
- 
-     
-     
-     
+.rimage {
+     position: absolute;    
 }
 
-.laki:hover{
-
+.rimage:hover{
     box-shadow: 0 0 25px rgb(243, 240, 240);
-   /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%); */
-   
-
-
-
 }
-
-
-
-
 
 .my-cols{
-
     display: flex;
-   /* justify-content: center;
-    align-items: center;*/
-
-
 }
-
-
-/*.fa-spin{
-
-    animation: fa-spin linear 1000s 2;
-} */
-
-
-
-/* .darylSpinner{ 
-    
-    margin-top: 500px;
-    margin-left: 800px;
-    /* position: absolute; */
-
 
 .wrapper {
     display: none;
@@ -232,19 +174,19 @@ nav .link_container {
 }
 
 .imageld:hover .wrapper {
-    display:block !important;
+    display:block;
 }
 
 
 
 .imagekpl:hover .wrapper {
 
-    display:block !important;
+    display:block;
 
 }
 
 p{
-
+    font-family: var(--ff-secondary);
     color: white;
 }
 
