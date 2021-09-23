@@ -3,9 +3,7 @@
 
 :root {
     --clr-bg: #22252a;
-  
     --clr-text: #f7f7f7;
-
     --clr-accent: #f17e64;
 
     --ff-primary: 'Staatliches';
@@ -13,6 +11,7 @@
 
     --fs-title: 5rem;
     --fs-text: 2rem;
+    --fs-link: 1.3rem;
 }
 
 
@@ -59,7 +58,8 @@ figure {
 
 a,
 a:focus,
-a:visited {
+a:visited,
+a:hover {
     position: relative;
     text-decoration: none;
     color: var(--clr-text);
@@ -157,6 +157,7 @@ h2 {
 
 @media (max-width: 700px) {
     nav {
+        position: absolute;
         justify-content: center;
         grid-template-columns: 1fr;
     }
@@ -167,6 +168,10 @@ h2 {
 
     nav .home_link {
         display: none;
+    }
+
+    .card-body {
+        width: 90%;
     }
 }
 
