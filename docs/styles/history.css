@@ -12,6 +12,7 @@
     --fs-title: 5rem;
     --fs-text: 2rem;
     --fs-link: 1.3rem;
+    --fs-local: 1.7rem;
 }
 
 
@@ -153,6 +154,15 @@ h2 {
 .card-body {
     background-color: rgba(34, 37, 42, 0.5);
     width: 70%;
+}
+
+#here {
+    color: var(--clr-accent);
+    font-size: var(--fs-local);
+}
+
+#here:after {
+    display:none;
 }
 
 @media (max-width: 700px) {
