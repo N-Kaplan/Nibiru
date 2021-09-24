@@ -4,7 +4,7 @@
 :root {
     --clr-bg: #22252a;
     --clr-text: #f7f7f7;
-    --clr-accent: #f17e64;
+    --clr-accent: var(--clr-accent);
 
     --ff-primary: 'Staatliches';
     --ff-secondary: 'Montserrat';
@@ -107,6 +107,7 @@ nav .link_container {
     font-size: var(--fs-text);
     transition: all 250ms ease;
 }
+
 .name_company::before,
 .name_company::after {
     content: '';
@@ -140,10 +141,10 @@ nav .link_container {
     left: calc(100% - 5px);
 }
 
-a.nasareq {color: #f17e64}
+a.nasareq {color: var(--clr-accent)}
 
 a.anchor {
-    color: #f17e64;
+    color: var(--clr-accent);
     position: absolute;
     font-size: 60px;
     margin-left: 50px;
@@ -215,18 +216,17 @@ h2 {
     margin-top: 50px;
     margin-bottom: 30px;
     margin-left: 0px;
-    color: white;
+    color: var(--clr-text);
 }
 
 a.btn {
     margin-top: 20px;
-    alignment: left;
-    color: #f17e64;
-    background-color: #e8e8f0;
+    color: var(--clr-accent);
+    background-color: var(--clr-text);
 }
 em {
     font-size: larger;
-    color: #f17e64;
+    color: var(--clr-accent);
 }
 
 li {
@@ -274,7 +274,7 @@ col {
         margin-bottom: 50px;
         padding-top: 4%;
         padding-right: 10%;}
-}}
+}
 
 @media screen and (max-width: 600px) {
     section.cost {
