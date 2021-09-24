@@ -127,7 +127,7 @@ header {
     content: '';
     position: absolute;
     background: var(--clr-accent);
-    width: 100%;
+    width: calc(100% - 5px);
     height: 5px;
     margin: 0 auto;
     transform: scaleX(1);
