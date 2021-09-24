@@ -54,6 +54,7 @@ img {
 
 figure {
     display: inline-block;
+    float: right;
 }
 
 a,
