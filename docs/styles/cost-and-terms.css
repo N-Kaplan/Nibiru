@@ -4,7 +4,7 @@
 :root {
     --clr-bg: #22252a;
     --clr-text: #f7f7f7;
-    --clr-accent: var(--clr-accent);
+    --clr-accent: #f17e64;
 
     --ff-primary: 'Staatliches';
     --ff-secondary: 'Montserrat';
