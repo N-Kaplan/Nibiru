@@ -3,14 +3,18 @@
 
 :root {
     --clr-bg: #22252a;
+
     --clr-text: #f7f7f7;
+
     --clr-accent: #f17e64;
 
     --ff-primary: 'Staatliches';
     --ff-secondary: 'Montserrat';
 
     --fs-title: 5rem;
+
     --fs-text: 2rem;
+
     --fs-link: 1.3rem;
     --fs-local: 1.7rem;
 }
@@ -19,6 +23,8 @@
 * {
     margin: 0;
     padding: 0;
+
+
     font-family: var(--ff-primary);
     box-sizing: border-box;
 }
@@ -30,9 +36,12 @@ body {
 }
 
 body {
+
     background: var(--clr-bg) !important; 
     overflow-x: hidden;
+
     }
+
 
 nav {
     position: fixed;
@@ -74,6 +83,7 @@ nav .link_container {
 
 .linkNav:after,
 .linkNav:visited::after {
+
     content: '';
     position: absolute;
     background: var(--clr-accent);
@@ -84,6 +94,7 @@ nav .link_container {
     transform: scaleX(1);
     transition: all .2s ease;
 }
+
 
 .linkNav:hover {
 
@@ -261,3 +272,4 @@ h1{
       inset: 1.3rem 0 0 0;
   }
 }
+
