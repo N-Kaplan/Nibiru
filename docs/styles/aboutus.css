@@ -16,6 +16,7 @@
     --fs-text: 2rem;
 
     --fs-link: 1.3rem;
+    --fs-local: 1.7rem;
 }
 
 
@@ -113,44 +114,46 @@ nav .link_container {
     transition: all 250ms ease;
 }
 
-.name_company::before {
-    content: '';
-    position: absolute;
-    background: var(--clr-accent);
-    width: calc(100% - 5px);
-    height: 5px;
-    margin: 0;
-    inset: -3px 0 0 0;
-    z-index: -1;
-}
-
+.name_company::before,
 .name_company::after {
     content: '';
     position: absolute;
     background: var(--clr-accent);
-    width: calc(100% - 5px);
     height: 5px;
-    margin: 0 auto;
-    left: 0;
-    bottom: 0;
+  
+    transition: all 250ms ease;
     z-index: -1;
 }
 
-
-
-#header{
-
-    align-items: center;
-    color:white;
-    z-index: 10;
-    font-size: larger;
+.name_company::before {
+    inset: -3px 0 0 0;
+    width: calc(100% - 5px);
+    margin: 0;
 }
 
+.name_company::after {
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 5px);
+    margin: 0 auto;
+}
 
+.name_company:hover::before,
+.name_company:hover::after {
+    width: 0;
+}
 
+.name_company:hover::after {
+    left: calc(100% - 5px);
+}
 
-.rimage:hover{
-    box-shadow: 0 0 25px rgb(243, 240, 240);
+#here {
+    color: var(--clr-accent);
+    font-size: var(--fs-local);
+}
+
+#here:after {
+    display:none;
 }
 
 .logocenter{
@@ -166,21 +169,11 @@ nav .link_container {
     display: none;
 }
 
-.wrapperkpl{
-    display: none;
-}
 
 .imageld:hover .wrapper {
     display:block;
 }
 
-
-
-.imagekpl:hover .wrapper {
-
-    display:block;
-
-}
 
 p{
     font-family: var(--ff-secondary);
@@ -189,7 +182,7 @@ p{
 
 .header{
     position: absolute;
-    top: 50%;
+    top: 45%;
     
     
     margin: auto;
@@ -220,6 +213,7 @@ p{
   font-family:Times New Roman;
   font-style:italic;
   padding-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 
@@ -228,6 +222,7 @@ p{
 {
   font-size:26px;
   font-style:italic;
+  
   
 
 }
@@ -239,6 +234,11 @@ h3{
     letter-spacing: 2px;
     position: relative;
     right:100px;
+}
+
+h1{
+    letter-spacing: 2px;
+
 }
 
 
