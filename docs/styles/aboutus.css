@@ -190,6 +190,10 @@ p{
     top: 100px;
 }
 
+.rimage:hover{
+    box-shadow: 0 0 25px rgb(90, 65, 65);
+}
+
 
 .poem ul, .poem ol
 {
