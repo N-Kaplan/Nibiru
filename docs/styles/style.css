@@ -62,7 +62,8 @@ nav {
 
 a,
 a:focus,
-a:visited {
+a:visited,
+a:hover {
     position: relative;
     text-decoration: none;
     color: var(--clr-text);
@@ -146,6 +147,7 @@ header {
 
 .description,
 .contact {
+    position: relative;
     color: var(--clr-text);
 }
 
@@ -215,6 +217,107 @@ header {
     color: var(--clr-text) !important;
 }
 
+hr {
+    background: var(--clr-text);
+}
+
+.footer_section {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: start;
+    padding: 1rem;
+    background-color: var(--clr-bg);
+}
+
+.footer_services,
+.footer_about,
+.footer_company,
+.footer_icons {
+    padding: 1rem;
+}
+
+.footer_section h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--clr-text);
+    letter-spacing: 3px;
+}
+
+.footer_section ul,
+.footer_company p {
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer_section ul li {
+    color: var(--clr-text);
+}
+
+.footer_section ul a {
+    opacity: 0.8;
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+.footer_section ul a:hover {
+    opacity: 1;
+}
+
+.footer_services p,
+.footer_about p,
+.footer_company p,
+.footer_icons p {
+    font-family: var(--ff-secondary);
+    color: var(--clr-accent);
+}
+
+.footer_section ul li,
+.footer_section ul a {
+    font-family: var(--ff-secondary);
+}
+
+.footer_services {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.footer_about {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.footer_company {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.footer_icons {
+    padding: 3rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.footer_icons .social_icons a {
+    margin: auto 0;
+    padding: 0.5rem;
+}
+
+.footer_icons .social_icons a:hover {
+    opacity: 0.5;
+    transition: all 200ms ease;
+}
+
+.footer_icons p {
+    margin: auto 0;
+    grid-column: 3 / 4;
+}
+
 @media (max-width: 700px) {
     
     .description p {
@@ -259,6 +362,10 @@ header {
 
     .services {
         width: 100%;
+    }
+
+    .footer_icons .social_icons {
+        text-align:center;
     }
 }
 
