@@ -122,31 +122,26 @@ header {
     font-size: var(--fs-title);
 }
 
-.name::before {
+.name:before,
+.name:after {
     content: '';
     position: absolute;
     background: var(--clr-accent);
-    width: 100%;
+    width: calc(100% - 5px);
     height: 5px;
     margin: 0 auto;
-    inset: 0;
     transform: scaleX(1);
     transition: all .2s ease;
     z-index: -1;
 }
 
+.name::before {
+    inset: 0;
+}
+
 .name::after {
-    content: '';
-    position: absolute;
-    background: var(--clr-accent);
-    width: 100%;
-    height: 5px;
-    margin: 0 auto;
     left: 0;
     bottom: 0;
-    transform: scaleX(1);
-    transition: all .2s ease;
-    z-index: -1;
 }
 
 .description,
